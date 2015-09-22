@@ -4,8 +4,8 @@ project(swig-matlab-pod)
 include(ExternalProject)
 
 ExternalProject_Add(swig-matlab
-    GIT_REPOSITORY https://github.com/rdeits/swig
-    GIT_TAG 8d6efc1ab6bdaf81c944bacaee2f4e404a461307
+    GIT_REPOSITORY https://github.com/jaeandersson/swig.git
+    GIT_TAG 98ed1086ac8d292a741e92fb4820efa3fc0d5991
     DOWNLOAD_DIR ${PROJECT_SOURCE_DIR}/swig-matlab
     SOURCE_DIR ${PROJECT_SOURCE_DIR}/swig-matlab
     PATCH_COMMAND ${PROJECT_SOURCE_DIR}/swig-matlab/autogen.sh
