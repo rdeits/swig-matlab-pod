@@ -5,7 +5,7 @@ include(ExternalProject)
 
 ExternalProject_Add(swig-matlab
     GIT_REPOSITORY https://github.com/jaeandersson/swig.git
-    GIT_TAG 98ed1086ac8d292a741e92fb4820efa3fc0d5991
+    GIT_TAG de0c52d69e5d3525f5dd56e3554a06a19fd75a13
     DOWNLOAD_DIR ${PROJECT_SOURCE_DIR}/swig-matlab
     SOURCE_DIR ${PROJECT_SOURCE_DIR}/swig-matlab
     PATCH_COMMAND ${PROJECT_SOURCE_DIR}/swig-matlab/autogen.sh
