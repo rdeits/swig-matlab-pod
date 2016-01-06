@@ -14,4 +14,4 @@ ExternalProject_Add(swig-matlab
     INSTALL_COMMAND make install || true # on OSX, make install fails because yodl2man is missing. Installing it is a huge pain, but, fortunately, all the necessary files get installed before the yodl2man error. So we just try to install and hope for the best. 
     )
 
-add_custom_target(install)
+add_custom_target(install DEPENDS swig-matlab)
