@@ -7,7 +7,7 @@ case $1 in
   ("macports")
     port install automake autoconf libtool ;;
   ("ubuntu")
-    apt-get install build-essential autotools-dev automake ;;
+    apt-get install build-essential autotools-dev automake bison ;;
   ("cygwin")
     cygwin-setup -q -P make autoconf automake libtool ;;
   (*)
