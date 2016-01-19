@@ -5,9 +5,9 @@ case $1 in
   ("homebrew")
     brew install autoconf automake libtool ;;
   ("macports")
-    port install automake autoconf libtool;;
+    port install automake autoconf libtool ;;
   ("ubuntu")
-    apt-get install build-essential ;;
+    apt-get install build-essential autotools-dev automake ;;
   ("cygwin")
     cygwin-setup -q -P make autoconf automake libtool ;;
   (*)
